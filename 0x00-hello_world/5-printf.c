@@ -1,8 +1,9 @@
 #include <stdio.h>
+
 /**
  * main - this is the prints
  *
- * Return: 0 when you succeed
+ * Return: 0 when successfull
  */
 
 int main(void)
