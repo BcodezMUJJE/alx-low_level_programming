@@ -1,7 +1,6 @@
 #include <stdio.h>
-
 /**
- * maim -main function
+ * main -main function
  *
  * Return: always 0
  */
@@ -14,4 +13,4 @@ if (i != 'q' && i != 'e')
 putchar(i);
 putchar('\n');
 return (0);
-}
+}	
