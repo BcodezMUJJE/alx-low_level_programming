@@ -1,15 +1,14 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_diagsums - prints the sum of the two diagonals of a square matrix of integers
- * @a: input value
- * @size: input value
- * Return: void
+ * print_diagsums - Entry point
+ * @a: input
+ * @size: input
+ * Return: Always 0 (Success)
  */
-
 void print_diagsums(int *a, int size)
 {
-int sum1, sum2, y;
+	int sum1, sum2, y;
 
 	sum1 = 0;
 	sum2 = 0;
@@ -26,3 +25,4 @@ int sum1, sum2, y;
 
 	printf("%d, %d\n", sum1, sum2);
 }
+
