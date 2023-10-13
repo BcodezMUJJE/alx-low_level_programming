@@ -1,26 +1,15 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
- * print_binary - print the binary representation of a number
- * @n: number to print in binary
- *
+ * print_binary - this prints the binary representation of decimal number
+ * @n: decimal number to convert
  */
 void print_binary(unsigned long int n)
 {
-int i, count = 0;
-unsigned long int current;
-
-for (i = 63 ; i >= 0 ; i--)
+if (n > 1)
 {
-current = n >> i;
-
-if (current & 1)
-{
-_putchar('1');
-count++;
+print_binary(n >> 1);
 }
-else if (count)
-	_putchar('0');
-}
-if (!count)
-	_putchar('0');
+(n & 1) ? putchar('1') : putchar('0');
 }

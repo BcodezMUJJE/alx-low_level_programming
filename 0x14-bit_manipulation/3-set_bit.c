@@ -1,16 +1,22 @@
 #include "main.h"
+
 /**
- * set_bit - sets a bit at a given index to 1
- * @n: pointer to the number to change 
- * @index: index of the bit to set to 1
+ * set_bit - this turns on the bit at given index
  *
- * Return: value of the bit
+ * @n: the pointer to int to modify
+ * @index: the index of bit to turn on
+ * 
+ * Return: 1 if successful, 0 otherwise
  */
+
 int set_bit(unsigned long int *n, unsigned int index)
 {
-if (index < 63)
+unsigned long int mask = 1 << index;
+
+if (index > 63)
 	return (-1);
 
-*n = ((1UL << index) | *n);
+*n = (mask | *n);
+
 return (1);
 }
